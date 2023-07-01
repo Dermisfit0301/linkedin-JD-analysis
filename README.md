@@ -1,2 +1,7 @@
 # linkedin-JD-analysis
-This repository has the code files of the project of linkedin Job description analysis.
+In this project, the goal was to analyze various job descriptions on Linkedin to understand what recruiters are looking for. The analysis was done using NLP techniques like tokenization, lemmatization, etc., to find out which keywords are trending and would go well in the resume. The whole project was done in three whole steps: 
+1. In the first step, the Python package selenium was used to automate the process of scraping 100 job descriptions from the LinkedIn website. This was the longest step of the whole exercise  as I had to scrape a lot of times to get the unique and relevant data.
+2. In this step, the data cleaning was processed and analyzed. Most time was spent cleaning the data and removing the duplicates and irrelevant jobs from the dataset. Then in the next step, the text data was processed using NLP techniques to be suitable for analysis. In the final step K-means clustering was used to segregate the keywords into two clusters and the keywords in each cluster were analyzed.
+3. In this last step a model was made. A small program was made to preprocess any random JD text from LinkedIn and put it in one of the many clusters. The goal is to identify which type of resume is going to be used to apply for a particular job. For that purpose, a small program has been made to classify the processed JD into one of the many categories. A third category called hybrid has been added in case the model is unable to classify.
+
+ This repository contains the code files and the dataset used. 
